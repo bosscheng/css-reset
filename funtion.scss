@@ -1,0 +1,15 @@
+// 需要结合 media 使用。
+/** 结合在一起使用的，作为基准的值使用。
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 25px
+    }
+
+    body {
+        font-size: 12px
+    }
+}
+*/
+@function px2rem($px) {
+  @return $px / (25*2) * 1rem;
+}
